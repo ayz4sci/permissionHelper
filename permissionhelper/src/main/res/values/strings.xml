@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PermissionHelper</string>
+
+    <string name="permission_title">To %1$s, we need your permission to</string>
+    <string name="grant_permission_to">Grant permission to %1$s</string>
+    <string name="access_your">Access your %1$s</string>
+    <string name="not_now">Not now</string>
+    <string name="permission_denied_title_message">It looks like you have turned off %1$s required for this feature</string>
+    <string name="permission_can_be_enabled_under">%1$s can be enabled under Settings > Apps > %2$s > Permission</string>
+    <string name="go_to_app_info">Go to App info</string>
+    <string name="continue_text">CONTINUE</string>
+
+</resources>
