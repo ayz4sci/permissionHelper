@@ -1,4 +1,4 @@
-package com.androidfactory.ayz4sci.permissionhelper;
+package com.ayz4sci.androidfactory.permissionhelper;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -10,7 +10,6 @@ import android.os.Build;
 import android.provider.Settings;
 import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;

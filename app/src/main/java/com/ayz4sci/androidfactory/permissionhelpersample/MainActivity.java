@@ -1,4 +1,4 @@
-package com.androidfactory.ayz4sci.permissionhelpersample;
+package com.ayz4sci.androidfactory.permissionhelpersample;
 
 import android.Manifest;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.androidfactory.ayz4sci.permissionhelper.PermissionHelper;
+import com.ayz4sci.androidfactory.permissionhelper.PermissionHelper;
 
 import pl.tajchert.nammu.PermissionCallback;
 

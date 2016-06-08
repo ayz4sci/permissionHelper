@@ -1,11 +1,11 @@
-package com.androidfactory.ayz4sci.permissionhelpersample;
+package com.ayz4sci.androidfactory.permissionhelpersample;
 
 import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 
-import com.androidfactory.ayz4sci.permissionhelper.PermissionHelper;
+import com.ayz4sci.androidfactory.permissionhelper.PermissionHelper;
 
 import pl.tajchert.nammu.PermissionCallback;
 

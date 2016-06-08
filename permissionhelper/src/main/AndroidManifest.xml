@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.androidfactory.ayz4sci.permissionhelper">
+    package="com.ayz4sci.androidfactory.permissionhelper">
 
     <uses-sdk tools:overrideLibrary="pl.tajchert.nammu" />
 

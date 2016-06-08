@@ -1,4 +1,4 @@
-package com.androidfactory.ayz4sci.permissionhelper;
+package com.ayz4sci.androidfactory.permissionhelper;
 
 import android.Manifest;
 
