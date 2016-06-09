@@ -3,7 +3,8 @@
 A permission helper library that simplifies asking user for permission in Android M. With a customisable explanation dialog, you can easily explain to the user the permissions you need and why you need it, with buttons for permissions or take users to the app settings page in case the permission was denied.
 
 # Playstore Sample
-
+[PermissionHelper Sample APK] (https://play.google.com/store/apps/details?id=com.ayz4sci.androidfactory.permissionhelpersample)
+Screenshots can be found on the store.
 
 # Version
 
@@ -105,9 +106,10 @@ To modify the explanation dialog displayed to the user, use the following getter
 * `getBackButton()` get the back button - cancel button
 
 That's all.
+
 # Thanks to 
-[Michal Tajchert] (https://github.com/tajchert) - Nammu Library
-[Ugo Ammanoh] (https://github.com/ugoamanoh) - many tips
+*[Michal Tajchert] (https://github.com/tajchert) - Nammu Library
+*[Ugo Ammanoh] (https://github.com/ugoamanoh) - many tips
 
 # License
 
