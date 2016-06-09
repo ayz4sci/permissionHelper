@@ -54,9 +54,9 @@ Then override the following in your app root activity or the root activity where
 ```
 
 Now, to perform an action that requires Android permission, call permissionHelper.verifyPermission. It accepts the following parameters:
-`String Array - description of each permission required, this will be displayed to the user in the explanation dialog.`
-`String array - an array of Manifest permissions`
-`PermissionCallback - you put the actions you want to perform when permission is granted or rejected.`
+* `String Array - description of each permission required, this will be displayed to the user in the explanation dialog.`
+* `String array - an array of Manifest permissions`
+* `PermissionCallback - you put the actions you want to perform when permission is granted or rejected.`
 See example below:
 ```java
     permissionHelper.verifyPermission(
