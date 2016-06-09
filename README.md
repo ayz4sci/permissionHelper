@@ -75,8 +75,8 @@ See example below:
 ```
 
 To simply verify whether user has granted the permission without showing any explanation dialog or asking for permission:
-`String array - an array of Manifest permissions`
-`PermissionCallback - you put the actions you want to perform when permission is granted or rejected.` 
+* `String array - an array of Manifest permissions`
+* `PermissionCallback - you put the actions you want to perform when permission is granted or rejected.` 
 e.g.
 ```java
     permissionHelper.verifyPermission(
@@ -97,17 +97,17 @@ e.g.
 
 # Customise Explanation UI
 To modify the explanation dialog displayed to the user, use the following getters:
-`customiseUI(int background, Drawable icon)` customise the background, set center (app) icon
-`getPermissionDialog()` get the permission dialog
-`getCenterIcon()` get the center icon (Logo), returns an ImageView
-`getNotAllowButton()` get the not allow button
-`getAllowButton()` get the allow button
-`getBackButton()` get the back button - cancel button
+* `customiseUI(int background, Drawable icon)` customise the background, set center (app) icon
+* `getPermissionDialog()` get the permission dialog
+* `getCenterIcon()` get the center icon (Logo), returns an ImageView
+* `getNotAllowButton()` get the not allow button
+* `getAllowButton()` get the allow button
+* `getBackButton()` get the back button - cancel button
 
 That's all.
 # Thanks to 
-Michal Tajchert https://github.com/tajchert.
-Ugo Ammanoh https://github.com/ugoamanoh
+[Michal Tajchert] (https://github.com/tajchert) - Nammu Library
+[Ugo Ammanoh] (https://github.com/ugoamanoh) - many tips
 
 # License
 
