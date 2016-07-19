@@ -11,7 +11,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.androidfactory.ayz4sci.permissionhelpersample"
+        applicationId "com.ayz4sci.androidfactory.permissionhelpersample"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1

@@ -106,8 +106,8 @@ To modify the explanation dialog displayed to the user, use the following getter
 
 That's all.
 # Thanks to 
-Michal Tajchert https://github.com/tajchert.
-Ugo Ammanoh https://github.com/ugoamanoh
+[Michal Tajchert] (https://github.com/tajchert) - Nammu Library
+[Ugo Ammanoh] (https://github.com/ugoamanoh) - many tips
 
 # License
 

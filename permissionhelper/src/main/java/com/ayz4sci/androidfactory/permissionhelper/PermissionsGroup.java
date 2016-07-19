@@ -72,7 +72,7 @@ public class PermissionsGroup {
                 return CALENDAR_GROUP;
 
             case CAMERA:
-                return CALENDAR_GROUP;
+                return CAMERA_GROUP;
 
             case READ_CONTACTS:
             case WRITE_CONTACTS:
