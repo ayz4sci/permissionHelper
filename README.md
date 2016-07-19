@@ -3,6 +3,8 @@
 A permission helper library that simplifies asking user for permission in Android M. With a customisable explanation dialog, you can easily explain to the user the permissions you need and why you need it, with buttons for permissions or take users to the app settings page in case the permission was denied.
 
 # Playstore Sample
+Screenshots can be found on the store. <br/>
+[PermissionHelper Sample APK] (https://play.google.com/store/apps/details?id=com.ayz4sci.androidfactory.permissionhelpersample)
 
 
 # Version
@@ -52,9 +54,9 @@ Then override the following in your app root activity or the root activity where
 ```
 
 Now, to perform an action that requires Android permission, call permissionHelper.verifyPermission. It accepts the following parameters:
-`String Array - description of each permission required, this will be displayed to the user in the explanation dialog.`
-`String array - an array of Manifest permissions`
-`PermissionCallback - you put the actions you want to perform when permission is granted or rejected.`
+* `String Array - description of each permission required, this will be displayed to the user in the explanation dialog.`
+* `String array - an array of Manifest permissions`
+* `PermissionCallback - you put the actions you want to perform when permission is granted or rejected.`
 See example below:
 ```java
     permissionHelper.verifyPermission(
@@ -75,8 +77,8 @@ See example below:
 ```
 
 To simply verify whether user has granted the permission without showing any explanation dialog or asking for permission:
-`String array - an array of Manifest permissions`
-`PermissionCallback - you put the actions you want to perform when permission is granted or rejected.` 
+* `String array - an array of Manifest permissions`
+* `PermissionCallback - you put the actions you want to perform when permission is granted or rejected.` 
 e.g.
 ```java
     permissionHelper.verifyPermission(
@@ -97,17 +99,18 @@ e.g.
 
 # Customise Explanation UI
 To modify the explanation dialog displayed to the user, use the following getters:
-`customiseUI(int background, Drawable icon)` customise the background, set center (app) icon
-`getPermissionDialog()` get the permission dialog
-`getCenterIcon()` get the center icon (Logo), returns an ImageView
-`getNotAllowButton()` get the not allow button
-`getAllowButton()` get the allow button
-`getBackButton()` get the back button - cancel button
+* `customiseUI(int background, Drawable icon)` customise the background, set center (app) icon
+* `getPermissionDialog()` get the permission dialog
+* `getCenterIcon()` get the center icon (Logo), returns an ImageView
+* `getNotAllowButton()` get the not allow button
+* `getAllowButton()` get the allow button
+* `getBackButton()` get the back button - cancel button
 
 That's all.
+
 # Thanks to 
-[Michal Tajchert] (https://github.com/tajchert) - Nammu Library
-[Ugo Ammanoh] (https://github.com/ugoamanoh) - many tips
+* [Michal Tajchert] (https://github.com/tajchert) - Nammu Library
+* [Ugo Ammanoh] (https://github.com/ugoamanoh) - many tips
 
 # License
 
