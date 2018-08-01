@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="button_width">160dp</dimen>
-    <dimen name="button_height">40dp</dimen>
-    <dimen name="text_bigger_title">24sp</dimen>
-    <dimen name="text_title">18sp</dimen>
-    <dimen name="text_normal">16sp</dimen>
+    <dimen name="permission_button_height">40dp</dimen>
+    <dimen name="permission_text_bigger_title">24sp</dimen>
+    <dimen name="permission_text_title">18sp</dimen>
+    <dimen name="permission_text_normal">16sp</dimen>
 </resources>

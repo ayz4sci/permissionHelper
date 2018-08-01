@@ -3,7 +3,7 @@
     android:id="@+id/background_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_light_gray"
+    android:background="@color/permission_background_light_gray"
     android:clickable="true">
 
     <ImageButton
@@ -46,7 +46,7 @@
             android:text="@string/permission_title"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
-            android:textSize="@dimen/text_bigger_title" />
+            android:textSize="@dimen/permission_text_bigger_title" />
 
         <TextView
             android:id="@+id/permission_description"
@@ -57,7 +57,7 @@
             android:text="@string/access_your"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
-            android:textSize="@dimen/text_title" />
+            android:textSize="@dimen/permission_text_title" />
     </LinearLayout>
 
     <RelativeLayout
@@ -76,7 +76,7 @@
             <Button
                 android:id="@+id/not_now_button"
                 android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
+                android:layout_height="@dimen/permission_button_height"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
                 android:layout_marginRight="30dp"
@@ -84,7 +84,7 @@
                 android:gravity="center"
                 android:text="@string/not_now"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/text_title" />
+                android:textSize="@dimen/permission_text_title" />
 
             <Button
                 android:id="@+id/allow_button"
@@ -95,7 +95,7 @@
                 android:gravity="center"
                 android:text="@string/continue_text"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/text_title" />
+                android:textSize="@dimen/permission_text_title" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

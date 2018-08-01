@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="background_light_gray">#FAFAFA</color>
+    <color name="permission_background_light_gray">#FAFAFA</color>
 </resources>
