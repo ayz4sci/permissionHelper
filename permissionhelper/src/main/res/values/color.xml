@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="color_primary">#91b82d</color>
-    <color name="color_primary_transparent">#F191b82d</color>
-    <color name="color_primary_dark">#7da21d</color>
-    <color name="color_primary_darker">#668417</color>
+    <color name="background_light_gray">#FAFAFA</color>
 </resources>

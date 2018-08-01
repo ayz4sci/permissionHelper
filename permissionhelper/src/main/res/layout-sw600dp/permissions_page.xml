@@ -3,7 +3,7 @@
     android:id="@+id/background_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
+    android:background="@color/background_light_gray"
     android:clickable="true">
 
     <ImageButton
@@ -43,7 +43,7 @@
             android:padding="5dp"
             android:text="@string/permission_title"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/text_bigger_title" />
 
         <RelativeLayout
@@ -62,7 +62,7 @@
                 android:padding="10dp"
                 android:text="@string/access_your"
                 android:textAllCaps="false"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="@dimen/text_title" />
 
         </RelativeLayout>
@@ -73,10 +73,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="30dp"
-            android:backgroundTint="@android:color/white"
+            android:background="@android:color/black"
+            android:foreground="?android:attr/selectableItemBackground"
             android:gravity="center"
             android:text="@string/continue_text"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/text_title" />
 
         <Button
@@ -86,9 +87,10 @@
             android:layout_gravity="center"
             android:layout_marginBottom="100dp"
             android:background="@android:color/transparent"
+            android:foreground="?android:attr/selectableItemBackground"
             android:gravity="center"
             android:text="@string/not_now"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/text_title" />
     </LinearLayout>
 </RelativeLayout>

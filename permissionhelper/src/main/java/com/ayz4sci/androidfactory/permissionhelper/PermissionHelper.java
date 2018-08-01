@@ -25,29 +25,29 @@ import pl.tajchert.nammu.PermissionCallback;
  * Created by Ayz4sci on 01/06/16.
  */
 public class PermissionHelper {
-    private static PermissionHelper   permissionHelper;
-    private static final int          REQUEST_CODE = 12345;
+    private static PermissionHelper permissionHelper;
+    private static final int REQUEST_CODE = 12345;
 
-    private Dialog              permissionDialog;
-    private ImageButton         backArrow;
-    private TextView            permissionTitleTextView;
-    private TextView            permissionDescTextView;
-    private Button              allowButton;
-    private Button              notAllowButton;
-    private String              continueText;
+    private Dialog permissionDialog;
+    private ImageButton backArrow;
+    private TextView permissionTitleTextView;
+    private TextView permissionDescTextView;
+    private Button allowButton;
+    private Button notAllowButton;
+    private String continueText;
 
-    private String              notNowText;
-    private String              goToAppInfo;
-    private String              accessMessage;
-    private String              permissionTitle;
-    private String              permissionDeniedString;
-    private String              grantPermissionToString;
-    private String              enablePermissionFromSettings;
-    private String              appName;
-    private PermissionCallback  permissionCallback;
-    private ArrayList<String>   neededPermissions;
+    private String notNowText;
+    private String goToAppInfo;
+    private String accessMessage;
+    private String permissionTitle;
+    private String permissionDeniedString;
+    private String grantPermissionToString;
+    private String enablePermissionFromSettings;
+    private String appName;
+    private PermissionCallback permissionCallback;
+    private ArrayList<String> neededPermissions;
 
-    private Activity            activity;
+    private Activity activity;
 
     public static PermissionHelper getInstance(Activity activity) {
         if (permissionHelper == null) {
@@ -72,26 +72,26 @@ public class PermissionHelper {
         initListeners();
     }
 
-    private void initUI(Dialog dialog){
-        backArrow                       = (ImageButton) dialog.findViewById(R.id.back_arrow);
-        permissionTitleTextView         = (TextView) dialog.findViewById(R.id.permission_title);
-        permissionDescTextView          = (TextView) dialog.findViewById(R.id.permission_description);
-        allowButton                     = (Button) dialog.findViewById(R.id.allow_button);
-        notAllowButton                  = (Button) dialog.findViewById(R.id.not_now_button);
+    private void initUI(Dialog dialog) {
+        backArrow = (ImageButton) dialog.findViewById(R.id.back_arrow);
+        permissionTitleTextView = (TextView) dialog.findViewById(R.id.permission_title);
+        permissionDescTextView = (TextView) dialog.findViewById(R.id.permission_description);
+        allowButton = (Button) dialog.findViewById(R.id.allow_button);
+        notAllowButton = (Button) dialog.findViewById(R.id.not_now_button);
 
-        continueText                    = dialog.getContext().getString(R.string.continue_text);
-        notNowText                      = dialog.getContext().getString(R.string.not_now);
-        goToAppInfo                     = dialog.getContext().getString(R.string.go_to_app_info);
-        accessMessage                   = dialog.getContext().getString(R.string.access_your);
-        permissionTitle                 = dialog.getContext().getString(R.string.permission_title);
-        permissionDeniedString          = dialog.getContext().getString(R.string.permission_denied_title_message);
-        grantPermissionToString         = dialog.getContext().getString(R.string.grant_permission_to);
-        enablePermissionFromSettings    = dialog.getContext().getString(R.string.permission_can_be_enabled_under);
+        continueText = dialog.getContext().getString(R.string.continue_text);
+        notNowText = dialog.getContext().getString(R.string.not_now);
+        goToAppInfo = dialog.getContext().getString(R.string.go_to_app_info);
+        accessMessage = dialog.getContext().getString(R.string.access_your);
+        permissionTitle = dialog.getContext().getString(R.string.permission_title);
+        permissionDeniedString = dialog.getContext().getString(R.string.permission_denied_title_message);
+        grantPermissionToString = dialog.getContext().getString(R.string.grant_permission_to);
+        enablePermissionFromSettings = dialog.getContext().getString(R.string.permission_can_be_enabled_under);
 
         getAppName();
     }
 
-    private void initListeners(){
+    private void initListeners() {
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,7 +103,7 @@ public class PermissionHelper {
         allowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(allowButton.getText().toString().equalsIgnoreCase(continueText)){
+                if (allowButton.getText().toString().equalsIgnoreCase(continueText)) {
                     Nammu.askForPermission(activity, neededPermissions.toArray(new String[neededPermissions.size()]), new PermissionCallback() {
                         @Override
                         public void permissionGranted() {
@@ -194,11 +194,11 @@ public class PermissionHelper {
             return;
         }
 
-        if(titles.length != requiredPermissions.length){
+        if (titles.length != requiredPermissions.length) {
             throw new IllegalArgumentException("Titles length must be equal to required permissions length");
         }
 
-        neededPermissions       = new ArrayList<>();
+        neededPermissions = new ArrayList<>();
         this.permissionCallback = permissionCallback;
 
         ArrayList<String> shouldShowRequestPermissionRationales = new ArrayList<>();
@@ -218,7 +218,7 @@ public class PermissionHelper {
                 if (Nammu.shouldShowRequestPermissionRationale(activity, requiredPermission)) {
                     shouldShowRequestPermissionRationales.add(requiredPermission);
 
-                    if(!requestPermissionRationalesTitle.contains(titles[i])) {
+                    if (!requestPermissionRationalesTitle.contains(titles[i])) {
                         requestPermissionRationalesTitle = requestPermissionRationalesTitle
                                 + (shouldShowRequestPermissionRationales.size() == 1 ? "" : ", ") + titles[i];
                     }
@@ -244,9 +244,9 @@ public class PermissionHelper {
         }
     }
 
-    public static void verifyPermissions(String[] requiredPermissions, PermissionCallback permissionCallback){
-        for(String requiredPermission : requiredPermissions){
-            if(!Nammu.checkPermission(requiredPermission)){
+    public static void verifyPermissions(String[] requiredPermissions, PermissionCallback permissionCallback) {
+        for (String requiredPermission : requiredPermissions) {
+            if (!Nammu.checkPermission(requiredPermission)) {
                 permissionCallback.permissionRefused();
                 return;
             }
@@ -257,16 +257,16 @@ public class PermissionHelper {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_CODE && permissionCallback != null && activity != null) {
             ArrayList<String> rejectedPermissions = new ArrayList<>();
-            for(String neededPermission: neededPermissions){
-                if (!Nammu.checkPermission(neededPermission)){
+            for (String neededPermission : neededPermissions) {
+                if (!Nammu.checkPermission(neededPermission)) {
                     rejectedPermissions.add(neededPermission);
                 }
             }
 
             permissionDialog.dismiss();
-            if(!rejectedPermissions.isEmpty()){
+            if (!rejectedPermissions.isEmpty()) {
                 permissionCallback.permissionRefused();
-            }else{
+            } else {
                 permissionCallback.permissionGranted();
             }
         }
@@ -276,7 +276,7 @@ public class PermissionHelper {
         Nammu.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
-    public  void openAppSettings(Activity activity) {
+    public void openAppSettings(Activity activity) {
         Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
         Uri uri = Uri.fromParts("package", activity.getPackageName(), null);
         intent.setData(uri);
@@ -294,8 +294,7 @@ public class PermissionHelper {
     public Dialog getPermissionDialog() {
         return permissionDialog;
     }
-
-    protected void setPermissionCallback(PermissionCallback permissionCallback){
+    protected void setPermissionCallback(PermissionCallback permissionCallback) {
         this.permissionCallback = permissionCallback;
     }
 
@@ -303,11 +302,11 @@ public class PermissionHelper {
         this.neededPermissions = neededPermissions;
     }
 
-    public ImageButton getBackButton(){
+    public ImageButton getBackButton() {
         return backArrow;
     }
 
-    public Button getAllowButton(){
+    public Button getAllowButton() {
         return allowButton;
     }
 
@@ -327,8 +326,8 @@ public class PermissionHelper {
         this.appName = appName;
     }
 
-    public void customiseUI(int background, Drawable icon){
-        getBackgroundLayout().setBackgroundColor(background);
+    public void customiseUI(int background, Drawable icon) {
+        getBackgroundLayout().setBackgroundColor(activity.getResources().getColor(background));
         getCenterIcon().setImageDrawable(icon);
     }
 

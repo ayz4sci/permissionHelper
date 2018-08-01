@@ -1,0 +1,9 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar" />
+
+</resources>
