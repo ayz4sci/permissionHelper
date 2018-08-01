@@ -75,7 +75,6 @@
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             android:background="@android:color/black"
-            android:foreground="?android:attr/selectableItemBackground"
             android:gravity="center"
             android:text="@string/continue_text"
             android:textColor="@android:color/white"
@@ -88,10 +87,9 @@
             android:layout_gravity="center"
             android:layout_marginBottom="30dp"
             android:background="@android:color/transparent"
-            android:foreground="?android:attr/selectableItemBackground"
             android:gravity="center"
             android:text="@string/not_now"
             android:textColor="@android:color/black"
-            android:textSize="@dimen/text_normal" />
+            android:textSize="@dimen/text_title" />
     </LinearLayout>
 </RelativeLayout>

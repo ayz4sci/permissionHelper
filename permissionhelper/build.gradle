@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/ayz4sci/permissionHelper'
     gitUrl = 'https://github.com/ayz4sci/permissionHelper.git'
 
-    libraryVersion = '1.2.1'
+    libraryVersion = '1.2.2'
 
     developerId = 'ayz4sci'
     developerName = 'Ayoola Ajebeku'
@@ -37,8 +37,8 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 27
-        versionCode 3
-        versionName "1.2.1"
+        versionCode 4
+        versionName "1.2.2"
     }
     buildTypes {
         release {
