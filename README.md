@@ -9,14 +9,14 @@ Screenshots can be found on the store. <br/>
 
 # Version
 
-1.2.3
+1.2.4
 
 # Usage
 To use this library in your android project, just simply add the following repositories and dependency into your build.gradle
 
 ```sh
 dependencies {
-    compile 'com.ayz4sci.androidfactory:permissionhelper:1.2.3'
+    compile 'com.ayz4sci.androidfactory:permissionhelper:1.2.4'
 }
 ```
 

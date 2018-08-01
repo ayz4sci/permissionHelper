@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="button_width">160dp</dimen>
+    <dimen name="permission_button_width">160dp</dimen>
     <dimen name="permission_button_height">40dp</dimen>
     <dimen name="permission_text_bigger_title">24sp</dimen>
     <dimen name="permission_text_title">18sp</dimen>

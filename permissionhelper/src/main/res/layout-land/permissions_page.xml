@@ -75,7 +75,7 @@
 
             <Button
                 android:id="@+id/not_now_button"
-                android:layout_width="@dimen/button_width"
+                android:layout_width="@dimen/permission_button_width"
                 android:layout_height="@dimen/permission_button_height"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
@@ -88,7 +88,7 @@
 
             <Button
                 android:id="@+id/allow_button"
-                android:layout_width="@dimen/button_width"
+                android:layout_width="@dimen/permission_button_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="@android:color/black"
