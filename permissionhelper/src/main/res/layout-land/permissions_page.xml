@@ -14,7 +14,7 @@
         android:background="@android:color/transparent"
         android:padding="10dp"
         android:scaleType="center"
-        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+        android:src="@drawable/ic_close_black" />
 
     <ImageView
         android:id="@+id/center_icon"
@@ -25,13 +25,12 @@
         android:layout_marginTop="15dp"
         android:background="@android:color/transparent"
         android:scaleType="center"
-        android:src="@drawable/ic_android_white" />
+        android:src="@drawable/ic_android_black" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button_layout"
-        android:layout_marginBottom="10dp"
         android:orientation="vertical">
 
         <TextView
@@ -41,8 +40,10 @@
             android:layout_gravity="center_vertical"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto_medium"
             android:gravity="center"
-            android:padding="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
             android:text="@string/permission_title"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
@@ -52,8 +53,11 @@
             android:id="@+id/permission_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto_medium"
             android:gravity="center"
-            android:padding="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
             android:text="@string/access_your"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
@@ -81,6 +85,7 @@
                 android:layout_gravity="center"
                 android:layout_marginRight="30dp"
                 android:background="@android:color/transparent"
+                android:fontFamily="@font/roboto_medium"
                 android:gravity="center"
                 android:text="@string/not_now"
                 android:textColor="@android:color/black"
@@ -89,9 +94,10 @@
             <Button
                 android:id="@+id/allow_button"
                 android:layout_width="@dimen/permission_button_width"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/permission_button_height"
                 android:layout_gravity="center"
                 android:background="@android:color/black"
+                android:fontFamily="@font/roboto_medium"
                 android:gravity="center"
                 android:text="@string/continue_text"
                 android:textColor="@android:color/white"

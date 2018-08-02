@@ -26,9 +26,10 @@ android {
 }
 
 dependencies {
+    implementation project(":permissionhelper")
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
-    implementation 'com.android.support:appcompat-v7:27.1.0'
-    implementation 'com.android.support:design:27.1.0'
-    implementation 'com.ayz4sci.androidfactory:permissionhelper:1.2.4'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.github.tajchert:nammu:1.2.1'
 }
